@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #171717;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styles for anchor links (optional) */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.a-call {
+  text-decoration: underline;
+}
+
+//img trstion
+#backgroundImage {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+
+
+  .slider-container {
+      position: relative; /* Add relative positioning to contain the navigation buttons */
+      overflow: hidden;
+    }
+
+    .slider-wrapper {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-item {
+      flex: 0 0 calc(25% - 20px); /* Set the width of each slide here */
+      margin-right: 20px; /* Add spacing between slides */
+      border-radius: 8px; /* Optional: Add border radius to the slides */
+      overflow: hidden;
+    }
+
+    .slider-img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Navigation Buttons */
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+    }
+
+    .slider-nav button {
+      padding: 8px;
+      margin: 0 4px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+//port pg
+.rotate-180 {
+    transform: rotate(180deg);
+  }

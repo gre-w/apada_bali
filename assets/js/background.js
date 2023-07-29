@@ -2,12 +2,11 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const images = [
-      "../assets/port-img/render3.jpg", 
-      "../assets/port-img/render2.jpg",
-      "../assets/port-img/render1.jpg",
-      "../assets/port-img/render4.jpg", 
-      "../assets/port-img/render5.jpg", 
-      "../assets/port-img/render6.jpg", 
+      "./assets/port-img/render3.webp", 
+      "./assets/port-img/render2.webp",
+      "./assets/port-img/render4.webp", 
+      "./assets/port-img/render5.webp", 
+      "./assets/port-img/render6.webp", 
        
     ];
   

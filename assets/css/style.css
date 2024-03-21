@@ -25,7 +25,7 @@ a:hover {
   text-decoration: underline;
 }
 
-//img trstion
+/* //img trstion */
 #backgroundImage {
     opacity: 0;
     transition: opacity 2s;
@@ -71,7 +71,7 @@ a:hover {
       border-radius: 50%;
       cursor: pointer;
     }
-//port pg
+/* //port pg */
 .rotate-180 {
     transform: rotate(180deg);
   }

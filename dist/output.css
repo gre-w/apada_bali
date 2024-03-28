@@ -759,6 +759,14 @@ video {
   max-width: 36rem;
 }
 
+.max-w-\[50px\] {
+  max-width: 50px;
+}
+
+.max-w-\[12px\] {
+  max-width: 12px;
+}
+
 .border-separate {
   border-collapse: separate;
 }

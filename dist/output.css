@@ -608,6 +608,11 @@ video {
   inset: 0px;
 }
 
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -661,6 +666,26 @@ video {
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.-mx-4 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-10 {
@@ -747,6 +772,14 @@ video {
   margin-top: 0.5rem;
 }
 
+.-ml-4 {
+  margin-left: -1rem;
+}
+
+.-mr-4 {
+  margin-right: -1rem;
+}
+
 .block {
   display: block;
 }
@@ -827,6 +860,10 @@ video {
   max-width: 42rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -882,6 +919,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.-space-x-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-0.375rem * var(--tw-space-x-reverse));
+  margin-left: calc(-0.375rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .self-center {
@@ -1865,6 +1908,11 @@ a:hover {
 }
 
 @media (min-width: 640px) {
+  .sm\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
   .sm\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -1886,6 +1934,11 @@ a:hover {
     padding-bottom: 2.5rem;
   }
 
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .sm\:pl-5 {
     padding-left: 1.25rem;
   }
@@ -1897,6 +1950,11 @@ a:hover {
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1949,6 +2007,11 @@ a:hover {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

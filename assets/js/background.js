@@ -1,42 +1,41 @@
-//Bg image 
+// Background image rotator with fade effect
 
-document.addEventListener("DOMContentLoaded", function () {
-    const images = [
-      "./assets/port-img/render3.webp", 
-      "./assets/port-img/render2.webp",
-      "./assets/port-img/render4.webp", 
-      "./assets/port-img/render5.webp", 
-      "./assets/port-img/render6.webp", 
-       
-    ];
-  
-    let currentImageIndex = 0;
-    const backgroundImage = document.getElementById("backgroundImage");
-  
-    function fadeIn() {
-      backgroundImage.style.transition = "opacity 1s";
-      backgroundImage.style.opacity = 1;
-    }
-  
-    function fadeOut() {
-      backgroundImage.style.transition = "opacity 1s";
-      backgroundImage.style.opacity = 0;
-    }
-  
-    function changeBackgroundImage() {
-      fadeOut();
-  
-      setTimeout(function () {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        backgroundImage.style.backgroundImage = `url('${images[currentImageIndex]}')`;
-        fadeIn();
-      }, 1000); // 1 sec fade out
-    }
-  
-    // Initial fadeIn
-    fadeIn();
-  
-    setInterval(changeBackgroundImage, 3000); // 3 seconds total (1 second fadeOut + 1 second fadeIn + 1 second wait)
-  });
-  
-  
+document.addEventListener("DOMContentLoaded", () => {
+  const images = [
+    "./assets/port-img/render3.webp",
+    "./assets/port-img/render2.webp",
+    "./assets/port-img/render4.webp",
+    "./assets/port-img/render5.webp",
+    "./assets/port-img/render6.webp",
+  ];
+  const FADE_DURATION = 1500;
+  const INTERVAL = 3000;
+  let currentImageIndex = 0;
+  const backgroundImage = document.getElementById("backgroundImage");
+
+  if (!backgroundImage) return;
+
+  const setOpacity = (value) => {
+    backgroundImage.style.transition = `opacity ${FADE_DURATION / 2000}s`;
+    backgroundImage.style.opacity = value;
+  };
+
+  const setBackground = (index) => {
+    backgroundImage.style.backgroundImage = `url('${images[index]}')`;
+  };
+
+  const changeBackgroundImage = () => {
+    setOpacity(0);
+    setTimeout(() => {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      setBackground(currentImageIndex);
+      setOpacity(1);
+    }, FADE_DURATION);
+  };
+
+  // Initial setup
+  setBackground(currentImageIndex);
+  setOpacity(1);
+  setInterval(changeBackgroundImage, INTERVAL);
+});
+

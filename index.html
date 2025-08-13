@@ -1,1095 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>APADA Bali</title>
-        <meta
-            name="description"
-            content="APADA Bali merupakan perusahaan Arsitek bersertifikasi, Jasa PBG dan SLF, dan Perabotan. Hubungi sekarang untuk konsultasi lebih lanjut."
-        />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="dist/output.css" />
-        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-    </head>
 
-    <body>
-        <nav
-            id="navigation"
-            class="navbar outline-5 flex items-center justify-between bg-black p-4"
-        >
-            <!-- Logo (left side) -->
-            <div class="flex items-center">
-                <img
-                    class="mx-auto my-auto"
-                    src="./assets/logo.png"
-                    width="45px"
-                    alt="Logo"
-                />
-                <span class="mx-4 h-8 bg-slate-400" style="width: 1px"></span>
-                <span class="px-5 text-lg font-medium text-white"
-                    >APADA Bali</span
-                >
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APADA Bali</title>
+    <meta name="description"
+        content="APADA Bali merupakan perusahaan Arsitek bersertifikasi, Jasa PBG dan SLF, dan Furniture. Hubungi sekarang untuk konsultasi lebih lanjut." />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+</head>
 
-            <!-- Hamburger Icon (visible on smaller screens) -->
-            <div
-                class="flex rounded-sm bg-gradient-to-tl from-amber-400 via-red-700 to-indigo-600 shadow-lg md:hidden"
-            >
-                <button id="hamburgerMenu" class="text-gray-800">
-                    <svg
-                        class="h-6 w-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4 6h16M4 12h16m-7 6h7"
-                        ></path>
-                    </svg>
-                </button>
-            </div>
-
-            <div id="menuItems" class="hidden space-x-4 md:flex">
-                <a href="#" class="text-slate-200">Home</a>
-                <a href="#portofolio" class="text-slate-200">Portofolio</a>
-                <a href="./pages/services.html" class="text-slate-200"
-                    >Services</a
-                >
-                <a href="./pages/karir.html" class="text-slate-200">Career</a>
-            </div>
-        </nav>
-
-        <div
-            id="mobileMenu"
-            class="mobile-menu hidden bg-gradient-to-br from-amber-400 via-red-600 to-indigo-700 p-4"
-        >
-            <!-- Menu Items -->
-            <a href="#" class="my-2 block text-black">Home</a>
-            <p class="my-2 block text-black">Portofolio</p>
-            <a href="./pages/portofolio-asb.html" class="mx-5 block text-black"
-                >APADA Studio Bali</a
-            >
-            <a href="./pages/portofolio-ajb.html" class="mx-5 block text-black"
-                >APADA Jasa Bali</a
-            >
-            <a href="./pages/portofolio-afb.html" class="mx-5 block font-medium"
-                >APADA Furniture Bali</a
-            >
-            <a href="https://linktr.ee/apadabali" class="my-2 block text-black"
-                >Contact</a
-            >
-            <a href="./pages/services.html" class="my-2 block text-black"
-                >Services</a
-            >
-            <a href="./pages/karir.html" class="my-2 block text-black"
-                >Career</a
-            >
+<body>
+    <nav id="navigation" class="navbar outline-5 flex items-center justify-between bg-black p-4">
+        <!-- Logo (left side) -->
+        <div class="flex items-center">
+            <img class="mx-auto my-auto" src="./assets/logo.png" width="45px" alt="Logo" />
+            <span class="mx-4 h-8 bg-slate-400" style="width: 1px"></span>
+            <span class="px-5 text-lg font-medium text-white">APADA Bali</span>
         </div>
 
-        <!-- Hero Sect -->
-        <section id="hero" class="relative min-h-screen">
-            <div
-                id="backgroundImage"
-                class="absolute left-0 top-0 h-full w-full bg-cover bg-center"
-                style="background-image: url('./assets/port-img/render3.webp')"
-            ></div>
+        <!-- Hamburger Icon (visible on smaller screens) -->
+        <div class="flex rounded-sm bg-gradient-to-tl from-amber-400 via-red-700 to-indigo-600 shadow-lg md:hidden">
+            <button id="hamburgerMenu" class="text-gray-800">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
 
-            <!-- Overlay -->
-            <div
-                class="absolute left-0 top-0 h-full w-full bg-gray-800 opacity-20"
-            ></div>
-            <div
-                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center text-white"
-            >
-                <h1
-                    class="bg-gradient-to-tl from-amber-400 via-red-700 to-indigo-600 bg-clip-text stroke-black text-7xl font-bold text-transparent shadow-lg"
-                >
-                    APADA Bali
-                </h1>
-                <p class="mt-4 text-lg">
-                    Architecture Studio, PBG/SLF, Furniture.
-                </p>
-                <!-- Add any other content you want here -->
-            </div>
-        </section>
+        <div id="menuItems" class="hidden space-x-4 md:flex">
+            <a href="#" class="text-slate-200">Home</a>
+            <a href="#portofolio" class="text-slate-200">Portofolio</a>
+            <a href="./pages/services.html" class="text-slate-200">Services</a>
+            <a href="./pages/karir.html" class="text-slate-200">Career</a>
+        </div>
+    </nav>
 
-        <!-- Portofolio -->
-        <section id="portofolio" class="bg-neutral-900 pb-16 pt-36">
-            <div class="container">
-                <div class="w-full px-4">
-                    <div class="mx-auto mb-16 max-w-xl text-center">
-                        <h3 class="text-lg font-semibold text-amber-500">
-                            Featured
-                        </h3>
-                        <h1
-                            class="mb-4 bg-gradient-to-r from-amber-400 via-red-700 to-indigo-600 bg-clip-text text-5xl font-bold text-transparent lg:text-6xl"
-                        >
-                            APADA Bali Portfolio
-                        </h1>
-                        <p
-                            class="text-md font-medium text-amber-300 md:text-lg"
-                        >
-                            Cek portofolio kami lainnya di <br />
-                            <span class="a-call text-1xl text-red-600"
-                                ><a href="./pages/portofolio-asb.html"
-                                    >APADA Studio Bali </a
-                                ></span
-                            >•
-                            <span class="a-call text-1xl text-indigo-600"
-                                ><a href="./pages/portofolio-ajb.html"
-                                    >APADA Jasa Bali </a
-                                ></span
-                            >•
-                            <span class="a-call text-1xl text-cyan-400"
-                                ><a href="./pages/portofolio-afb.html"
-                                    >APADA Furniture Bali</a
-                                ></span
-                            >.
-                        </p>
-                    </div>
-                </div>
+    <div id="mobileMenu" class="mobile-menu hidden bg-gradient-to-br from-amber-400 via-red-600 to-indigo-700 p-4">
+        <!-- Menu Items -->
+        <a href="#" class="my-2 block text-black">Home</a>
+        <p class="my-2 block text-black">Portofolio</p>
+        <a href="./pages/portofolio-asb.html" class="mx-5 block text-black">APADA Studio Bali</a>
+        <a href="./pages/portofolio-ajb.html" class="mx-5 block text-black">APADA Jasa Bali</a>
+        <a href="./pages/portofolio-afb.html" class="mx-5 block font-medium">APADA Furniture Bali</a>
+        <a href="https://linktr.ee/apadabali" class="my-2 block text-black">Contact</a>
+        <a href="./pages/services.html" class="my-2 block text-black">Services</a>
+        <a href="./pages/karir.html" class="my-2 block text-black">Career</a>
+    </div>
 
-                <div
-                    class="flex w-full flex-wrap justify-center xl:mx-auto xl:w-10/12"
-                >
-                    <div class="mb-12 p-4 md:w-1/2">
-                        <div class="overflow-hidden rounded-md shadow-xl">
-                            <img
-                                src="./assets/port-img/ASB port/29.jpg"
-                                alt="Port1"
-                                width="w-full"
-                            />
-                        </div>
-                        <h3 class="mb-3 mt-5 text-xl font-bold text-slate-200">
-                            Rumah Modern Minimalis
-                        </h3>
-                    </div>
-                    <div class="mb-12 p-4 md:w-1/2">
-                        <div class="overflow-hidden rounded-md shadow-xl">
-                            <img
-                                src="./assets/port-img/ASB port/31.jpg"
-                                alt="Port2"
-                                width="w-full"
-                            />
-                        </div>
-                        <h3 class="mb-3 mt-5 text-xl font-bold text-slate-200">
-                            Rumah Bali Modern
-                        </h3>
-                    </div>
-                    <div class="mb-12 p-4 md:w-1/2">
-                        <div class="overflow-hidden rounded-md shadow-xl">
-                            <img
-                                src="./assets/port-img/ASB port/30.jpg"
-                                alt="Port3"
-                                width="w-full"
-                            />
-                        </div>
-                        <h3 class="mb-3 mt-5 text-xl font-bold text-slate-200">
-                            Villa Modern Minimalis
-                        </h3>
-                    </div>
-                    <div class="mb-12 p-4 md:w-1/2">
-                        <div class="overflow-hidden rounded-md shadow-xl">
-                            <img
-                                src="./assets/port-img/ASB port/32.jpg"
-                                alt="Port4"
-                                width="w-full"
-                            />
-                        </div>
-                        <h3 class="mb-3 mt-5 text-xl font-bold text-slate-200">
-                            Rumah Elite Modern
-                        </h3>
-                    </div>
+    <!-- Hero Sect -->
+    <section id="hero" class="relative min-h-screen">
+        <div id="backgroundImage" class="absolute left-0 top-0 h-full w-full bg-cover bg-center"
+            style="background-image: url('./assets/port-img/render3.webp')"></div>
 
-                    <div class="container">
-                        <div class="flex flex-wrap px-4 text-center">
-                            <div class="w-full p-4 text-3xl sm:w-1/2 lg:w-1/2">
-                                <div
-                                    class="rounded-lg border-2 border-slate-300 px-4 py-6"
-                                >
-                                    <h2
-                                        class="title-font text-3xl font-medium text-amber-400 lg:text-5xl"
-                                    >
-                                        105
-                                    </h2>
-                                    <p
-                                        class="text-2xl leading-relaxed text-amber-600"
-                                    >
-                                        Proyek Selesai
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="w-full p-4 text-3xl sm:w-1/2 lg:w-1/2">
-                                <div
-                                    class="rounded-lg border-2 border-slate-300 px-4 py-6"
-                                >
-                                    <h2
-                                        class="title-font text-3xl font-medium text-amber-400 lg:text-5xl"
-                                    >
-                                        3
-                                    </h2>
-                                    <p
-                                        class="text-2xl leading-relaxed text-amber-600"
-                                    >
-                                        Proyek Terkini
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Overlay -->
+        <div class="absolute left-0 top-0 h-full w-full bg-gray-800 opacity-20"></div>
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center text-white">
+            <h1
+                class="bg-gradient-to-tl from-amber-400 via-red-700 to-indigo-600 bg-clip-text stroke-black text-7xl font-bold text-transparent shadow-lg">
+                APADA Bali
+            </h1>
+            <p class="mt-4 text-lg">
+                Architecture Studio, PBG/SLF, Furniture.
+            </p>
+            <!-- Add any other content you want here -->
+        </div>
+    </section>
 
-        <!-- About Us -->
-        <section id="profile" class="bg-neutral-950 pb-10 pt-16">
-            <div class="container">
-                <div class="w-full px-4">
-                    <div class="mx-auto mb-16 max-w-xl text-center">
-                        <h3 class="text-lg font-semibold text-amber-500">
-                            Tentang
-                        </h3>
-                        <h1
-                            class="mb-4 bg-gradient-to-r from-amber-400 via-red-700 to-indigo-600 bg-clip-text text-5xl font-bold text-transparent lg:text-6xl"
-                        >
-                            APADA Bali
-                        </h1>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row md:items-center">
-                    <div
-                        class="mb-12 mr-4 flex items-center justify-center p-4 md:w-1/3"
-                    >
-                        <div class="overflow-hidden rounded-md">
-                            <img
-                                src="./assets/pfp.jpg"
-                                alt="leader"
-                                class="w-full md:w-auto"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mb-12 p-4 md:w-2/3">
-                        <h3
-                            class="mb-3 mt-5 text-2xl font-semibold text-slate-200 lg:text-3xl xl:text-4xl"
-                        >
-                            Ar. Ir. I Gede Ari Prianata Putra, ST, IPM, ASEAN
-                            Eng.
-                        </h3>
-                        <h4
-                            class="mb-3 mt-5 font-semibold text-slate-500 lg:text-2xl"
-                        >
-                            Arsitektur Universitas Udayana Th. 2014
-                        </h4>
-                        <h4
-                            class="mb-3 mt-5 font-semibold text-slate-500 lg:text-2xl"
-                        >
-                            APADA Bali Director
-                        </h4>
-                        <p class="text-base font-medium text-amber-300">
-                            APADA Bali berdiri tanggal 23 November 2015 yang
-                            dipimpin Arsitek I Gede Ari Prianata Putra, Lulusan
-                            Universitas Udayana th. 2014. Awalnya bernama APADA
-                            Studio Bali (<span class="text-indigo-700"
-                                >Ari Painting Art and Design Arch</span
-                            >) yang telah dirintis sejak lulus kuliah, akan
-                            tetapi konsep APADA tersebut sudah terencana sejak
-                            duduk dibangku SMA, yang sekarang sudah menjadi
-                            APADA Bali dengan tiga anak perusahaan yaitu APADA
-                            Studio Bali, APADA Jasa Bali, dan APADA Furniture
-                            Bali. <br />
-                            <br />
-                            Awalnya APADA Bali memiliki kantor pusat berlokasi
-                            di Jl. Kapten Agung, Denpasar (th. 2015-2021) sejak
-                            2022 - sekarang sudah direlokasi di Jl. Waturenggong
-                            Gg. XVIIB Panjer, Denpasar. <br />
-                            <br />
-                            Ari mengembangkan lingkup kerja APADA Bali yang
-                            hanya mencakup desain Arsitektural, kini merambah ke
-                            Pengurusan PBG/SLF Bangunan, serta Perabotan dan
-                            Interior.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="bg-neutral-950 pb-16 pt-16">
-            <div class="container">
-                <div class="flex flex-wrap">
-                    <div class="w full mb-10 px-4 lg:w-1/2">
-                        <h4 class="mb-3 font-bold uppercase text-amber-500">
-                            Tentang Kami
-                        </h4>
-                        <h2
-                            class="via-red600 mb-5 max-w-md bg-gradient-to-r from-amber-400 to-indigo-700/80 bg-clip-text text-3xl font-bold text-transparent lg:text-4xl"
-                        >
-                            Jasa Arsitektur, PBG/SLF bersertifikat di Kota
-                            Denpasar, Bali
-                        </h2>
-                        <p
-                            class="text-base font-medium text-slate-400 lg:text-lg"
-                        >
-                            APADA bali menawarkan konsultasi jasa tim arsitek
-                            dengan layanan lengkap dalam bidang Arsitektur,
-                            Perabotan, PBG/SLF, Perabotan. Kami siap membantu
-                            anda dari awal hingga akhir proyek. Kami memiliki
-                            antusiasme tinggi terhadap desain berkualitas,
-                            dengan pendekatan baru untuk setiap proyek,
-                            memperhatikan perincian desain, dan tetap
-                            memperhatikan konteks dan lingkungan setempat.
-                            Desain kami mencerminkan nuansa kontemporer namun
-                            juga sering terinspirasi oleh bentuk dan bahan
-                            tradisional vernakular di lokasi proyek kami.
-                        </p>
-                    </div>
-                    <div class="w-full px-4 lg:w-1/2">
-                        <h3
-                            class="mb-4 text-2xl font-semibold text-slate-200 lg:pt-10 lg:text-3xl"
-                        >
-                            Mari Berkonsultasi
-                        </h3>
-                        <p
-                            class="mb-6 text-base font-medium text-slate-400 lg:text-lg"
-                        >
-                            Kami berpengalaman dalam berbagai sektor dan skala
-                            proyek, termasuk perumahan, ekstensi rumah,
-                            komunitas, dan komersial. Setiap proyek kami
-                            diperlakukan dengan perhatian dan kepedulian yang
-                            sama. <br />
-                            <br />
-                            Jika Anda mencari arsitek yang akan bekerja sama
-                            dengan Anda untuk mencapai tujuan proyek Anda,
-                            jangan ragu untuk
-                            <a
-                                href="http://https://wa.me/qr/O7TNYQMYGZD2I1"
-                                target="_blank"
-                                class="a-call text-teal-500"
-                                >menghubungi kami</a
-                            >
-                            hari ini.
-                        </p>
-
-                        <!-- Social Media Icons -->
-                        <div class="flex items-center">
-                            <!-- Instagram -->
-                            <a
-                                href="https://www.instagram.com/apadastudiobali/"
-                                target="_blank"
-                                class="mr-3 flex h-9 w-9 justify-center rounded-full border border-slate-300 text-slate-300 hover:border-neutral-700 hover:text-amber-500"
-                            >
-                                <svg
-                                    role="img"
-                                    width="20"
-                                    class="fill-current"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <title>Instagram</title>
-                                    <path
-                                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                                    /></svg>
-                            </a>
-
-                            <!-- WhatsApp -->
-                            <a
-                                href="https://wa.me/qr/O7TNYQMYGZD2I1"
-                                target="_blank"
-                                class="mr-3 flex h-9 w-9 justify-center rounded-full border border-slate-300 text-slate-300 hover:border-neutral-700 hover:text-green-400"
-                            >
-                                <svg
-                                    role="img"
-                                    width="20"
-                                    class="fill-current"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <title>WhatsApp</title>
-                                    <path
-                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
-                                    />
-                                </svg>
-                            </a>
-
-                            <!-- YouTube -->
-                            <a
-                                href="https://youtube.com/@apadabalichannel/"
-                                target="_blank"
-                                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white"
-                            >
-                                <svg
-                                    role="img"
-                                    width="20"
-                                    class="fill-current"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <title>YouTube</title>
-                                    <path
-                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                                    />
-                                </svg>
-                            </a>
-                            <!-- Facebook -->
-                            <a
-                                href="https://www.facebook.com/profile.php?id=61550496303252"
-                                target="_blank"
-                                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white"
-                            >
-                                <svg
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    class="fill-current"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <title>Facebook</title>
-                                    <path
-                                        d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
-                                    />
-                                </svg>
-                            </a>
-                            <!-- Mail -->
-                            <a
-                                href="mailto:apadabali@gmail.com"
-                                target="_blank"
-                                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white"
-                            >
-                                <svg
-                                    role="img"
-                                    width="20"
-                                    class="fill-current"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <title>Email APADA Bali</title>
-                                    <path
-                                        d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services section -->
-        <section id="services" class="bg-slate-950 pb-12 pt-24">
-            <div class="container">
-                <div class="w-full px-4">
-                    <div class="mx-auto mb-16 max-w-xl text-center">
-                        <h2
-                            class="mb-4 bg-gradient-to-r from-amber-400 via-red-700 to-indigo-600 bg-clip-text py-5 text-4xl font-bold text-transparent sm:text-4xl lg:text-5xl"
-                        >
-                            Kami Siap Mewujudkan Properti Anda.
-                        </h2>
-                        <p
-                            class="text-md font-medium text-amber-300 md:text-lg"
-                        >
-                            APADA Bali memiliki 3 divisi yang dibuat keperluan
-                            spesifik anda, dari Konsultasi desain arsitektur,
-                            pengurusan PBG dan SLF, serta menyediakan keperluan
-                            interior anda.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap items-center self-center md:px-5">
-                    <div
-                        id="asb"
-                        class="mb-12 w-full border-separate px-4 md:w-1/2 lg:w-1/3 lg:pt-10"
-                    >
-                        <a href="./pages/portofolio-asb.html" class="w-full">
-                            <img
-                                src="./assets/asb.svg"
-                                width="80px"
-                                height="160px"
-                            />
-                        </a>
-                        <h1
-                            class="max-w-xl text-3xl font-semibold text-slate-200 lg:text-4xl"
-                        >
-                            <span
-                                class="block max-w-xl bg-gradient-to-r from-red-600 via-amber-300 to-indigo-700/80 bg-clip-text py-4 text-3xl font-bold text-transparent lg:text-4xl"
-                                >APADA Studio Bali</span
-                            >
-                        </h1>
-
-                        <h3 class="mb-5 font-medium text-slate-200">
-                            Konsultan, dan Studio Arsitektur
-                        </h3>
-
-                        <p
-                            class="mb-10 font-medium leading-relaxed text-slate-200"
-                        >
-                            Konsultasi desain bangunan impian Anda.
-                        </p>
-                        <div class="mb-5">
-                            <button
-                                id="openPort"
-                                class="hover:text-teal-x600 rounded-md bg-stone-900 px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-slate-200 hover:opacity-80 hover:shadow-lg"
-                            >
-                                Visit
-                            </button>
-                        </div>
-                        <a
-                            href="https://wa.me/qr/O7TNYQMYGZD2I1"
-                            target="_blank"
-                            class="rounded-md bg-stone-900 px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-slate-200 hover:text-teal-600 hover:opacity-80 hover:shadow-lg"
-                            >Contact
-                        </a>
-                    </div>
-
-                    <div
-                        id="ajb"
-                        class="mb-12 w-full rounded-md px-4 shadow-xl md:w-1/2 lg:w-1/3 lg:pt-10"
-                    >
-                        <a href="./pages/portofolio-ajb.html" class="w-full">
-                            <img
-                                src="./assets/ajb.svg"
-                                width="80px"
-                                height="160px"
-                            />
-                        </a>
-                        <h1
-                            class="max-w-xl text-3xl font-semibold text-slate-200 lg:text-4xl"
-                        >
-                            <span
-                                class="block bg-gradient-to-r from-indigo-400 via-red-600 to-indigo-700/80 bg-clip-text py-4 text-3xl font-bold text-transparent lg:text-4xl"
-                                >APADA Jasa Bali</span
-                            >
-                        </h1>
-
-                        <h3 class="mb-5 font-medium text-slate-200">
-                            Pengurusan Jasa PBG/SLF
-                        </h3>
-
-                        <p
-                            class="mb-10 font-medium leading-relaxed text-slate-200"
-                        >
-                            Jasa pengurusan PBG/SLF Properti Anda.
-                        </p>
-                        <div class="mb-5">
-                            <button
-                                id="openPort1"
-                                class="rounded-md bg-stone-900 px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-slate-200 hover:text-teal-600 hover:opacity-80 hover:shadow-lg"
-                            >
-                                Visit
-                            </button>
-                        </div>
-                        <a
-                            href="https://wa.me/qr/O7TNYQMYGZD2I1"
-                            target="_blank"
-                            class="rounded-md bg-stone-900 px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-slate-200 hover:text-teal-600 hover:opacity-80 hover:shadow-lg"
-                            >Contact</a
-                        >
-                    </div>
-
-                    <div
-                        id="afb"
-                        class="mb-12 w-full px-4 md:w-1/2 lg:w-1/3 lg:pt-10"
-                    >
-                        <a href="#" class="w-full">
-                            <img
-                                src="./assets/afb.svg"
-                                width="80px"
-                                height="160px"
-                            />
-                        </a>
-                        <h1
-                            class="max-w-xl text-3xl font-semibold text-slate-200 lg:text-4xl"
-                        >
-                            <span
-                                class="block max-w-xl bg-gradient-to-r from-emerald-400 via-blue-600 to-indigo-700/80 bg-clip-text py-4 text-3xl font-bold text-transparent lg:text-4xl"
-                                >APADA Furniture Bali</span
-                            >
-                        </h1>
-
-                        <h3 class="mb-5 font-medium text-slate-200">
-                            Untuk kebutuhan Perabotan dan Interior anda.
-                        </h3>
-
-                        <p
-                            class="mb-2 font-medium leading-relaxed text-slate-200"
-                        >
-                            Dibuat sesuai keperluan interior anda.
-                        </p>
-                        <div class="mb-5">
-                            <button
-                                id="openPort2"
-                                class="rounded-md bg-stone-900 px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-slate-200 hover:text-teal-600 hover:opacity-80 hover:shadow-lg"
-                            >
-                                Visit
-                            </button>
-                        </div>
-                        <a
-                            href="https://wa.me/qr/O7TNYQMYGZD2I1"
-                            target="_blank"
-                            class="rounded-md bg-stone-900 px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-slate-200 hover:text-teal-600 hover:opacity-80"
-                            >Order</a
-                        >
-                    </div>
-
-                    <div class="w-full flex items-center justify-center text-center mb-12 px-4">
-                    <p class="text-amber-300">
-                        Anda bisa
-                        <a
-                            href="https://wa.me/qr/O7TNYQMYGZD2I1"
-                            target="_blank"
-                            class="a-call text-emerald-500"
-                            >menghubungi kami</a
-                        >
-                        jika memiliki pertanyaan tentang jasa kami. <br> Atau
-                        kunjungi
-                        <a
-                            href="./pages/workflow.html"
-                            class="a-call text-rose-600"
-                            >halaman ini </a
-                        >untuk mengetahui alur kerja kami.
+    <!-- Portofolio -->
+    <section id="portofolio" class="bg-neutral-900 pb-16 pt-36">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 max-w-xl text-center">
+                    <h3 class="text-lg font-semibold text-amber-500">
+                        Featured
+                    </h3>
+                    <h1
+                        class="mb-4 bg-gradient-to-r from-amber-400 via-red-700 to-indigo-600 bg-clip-text text-5xl font-bold text-transparent lg:text-6xl">
+                        APADA Bali Portfolio
+                    </h1>
+                    <p class="text-md font-medium text-amber-300 md:text-lg">
+                        Cek portofolio kami lainnya di <br />
+                        <span class="a-call text-1xl text-red-600"><a href="./pages/portofolio-asb.html">APADA Studio
+                                Bali </a></span>•
+                        <span class="a-call text-1xl text-indigo-600"><a href="./pages/portofolio-ajb.html">APADA Jasa
+                                Bali </a></span>•
+                        <span class="a-call text-1xl text-cyan-400"><a href="./pages/portofolio-afb.html">APADA
+                                Furniture Bali</a></span>.
                     </p>
                 </div>
+            </div>
+
+            <div class="flex w-full flex-wrap justify-center xl:mx-auto xl:w-10/12">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-xl">
+                        <img src="./assets/port-img/ASB port/29.jpg" alt="Port1" width="w-full" />
+                    </div>
+                    <h3 class="mb-3 mt-5 text-xl font-bold text-slate-200">
+                        Rumah Modern Minimalis
+                    </h3>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-xl">
+                        <img src="./assets/port-img/ASB port/31.jpg" alt="Port2" width="w-full" />
+                    </div>
+                    <h3 class="mb-3 mt-5 text-xl font-bold text-slate-200">
+                        Rumah Bali Modern
+                    </h3>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-xl">
+                        <img src="./assets/port-img/ASB port/30.jpg" alt="Port3" width="w-full" />
+                    </div>
+                    <h3 class="mb-3 mt-5 text-xl font-bold text-slate-200">
+                        Villa Modern Minimalis
+                    </h3>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-xl">
+                        <img src="./assets/port-img/ASB port/32.jpg" alt="Port4" width="w-full" />
+                    </div>
+                    <h3 class="mb-3 mt-5 text-xl font-bold text-slate-200">
+                        Rumah Elite Modern
+                    </h3>
+                </div>
+
+                <div class="container">
+                    <div class="flex flex-wrap px-4 text-center">
+                        <div class="w-full p-4 text-3xl sm:w-1/2 lg:w-1/2">
+                            <div class="rounded-lg border-2 border-slate-300 px-4 py-6">
+                                <h2 class="title-font text-3xl font-medium text-amber-400 lg:text-5xl">
+                                    300
+                                </h2>
+                                <p class="text-2xl leading-relaxed text-amber-600">
+                                    Proyek Selesai
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full p-4 text-3xl sm:w-1/2 lg:w-1/2">
+                            <div class="rounded-lg border-2 border-slate-300 px-4 py-6">
+                                <h2 class="title-font text-3xl font-medium text-amber-400 lg:text-5xl">
+                                    5
+                                </h2>
+                                <p class="text-2xl leading-relaxed text-amber-600">
+                                    Proyek Terkini
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="spaces" class="bg-neutral-950 bg-opacity-50 backdrop-blur-md pb-16 pt-16">
-            <div class="container">
-                <div class="flex flex-col md:flex-row">
+    <!-- About Us -->
+    <section id="profile" class="bg-neutral-950 pb-10 pt-16">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 max-w-xl text-center">
+                    <h3 class="text-lg font-semibold text-amber-500">
+                        Tentang
+                    </h3>
+                    <h1
+                        class="mb-4 bg-gradient-to-r from-amber-400 via-red-700 to-indigo-600 bg-clip-text text-5xl font-bold text-transparent lg:text-6xl">
+                        APADA Bali
+                    </h1>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center">
+                <div class="mb-12 mr-4 flex items-center justify-center p-4 md:w-1/3">
+                    <div class="overflow-hidden rounded-md">
+                        <img src="./assets/pfp.jpg" alt="leader" class="w-full md:w-auto" />
+                    </div>
+                </div>
+
+                <div class="mb-12 p-4 md:w-2/3">
+                    <h3 class="mb-3 mt-5 text-2xl font-semibold text-slate-200 lg:text-3xl xl:text-4xl">
+                        Ar. Ir. I Gede Ari Prianata Putra, ST, IPM, ASEAN
+                        Eng.
+                    </h3>
+                    <h4 class="mb-3 mt-5 font-semibold text-slate-500 lg:text-2xl">
+                        Arsitektur Universitas Udayana Th. 2014
+                    </h4>
+                    <h4 class="mb-3 mt-5 font-semibold text-slate-500 lg:text-2xl">
+                        APADA Bali
+                    </h4>
+                    <p class="text-base font-medium text-amber-300">
+                        APADA Bali berdiri tanggal 23 November 2015 yang
+                        dipimpin Arsitek I Gede Ari Prianata Putra, Lulusan
+                        Universitas Udayana th. 2014. Awalnya bernama APADA
+                        Studio Bali (<span class="text-indigo-700">Ari Painting Art and Design Arch</span>) yang telah
+                        dirintis sejak lulus kuliah, akan
+                        tetapi konsep APADA tersebut sudah terencana sejak
+                        duduk dibangku SMA, yang sekarang sudah menjadi
+                        APADA Bali dengan tiga anak perusahaan yaitu APADA
+                        Studio Bali, APADA Jasa Bali, dan APADA Furniture
+                        Bali. <br />
+                        <br />
+                        Awalnya APADA Bali memiliki kantor pusat berlokasi
+                        di Jl. Kapten Agung, Denpasar (th. 2015-2021) sejak
+                        2022 - sekarang sudah direlokasi di Jl. Waturenggong
+                        Gg. XVIIB Panjer, Denpasar. <br />
+                        <br />
+                        Ari mengembangkan lingkup kerja APADA Bali yang
+                        hanya mencakup desain Arsitektural, kini merambah ke
+                        Pengurusan PBG/SLF Bangunan, serta Furniture dan
+                        Interior.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-neutral-950 pb-16 pt-16">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w full mb-10 px-4 lg:w-1/2">
+                    <h4 class="mb-3 font-bold uppercase text-amber-500">
+                        Tentang Kami
+                    </h4>
+                    <h2
+                        class="via-red600 mb-5 max-w-md bg-gradient-to-r from-amber-400 to-indigo-700/80 bg-clip-text text-3xl font-bold text-transparent lg:text-4xl">
+                        Jasa Arsitektur, PBG/SLF bersertifikat di Kota
+                        Denpasar, Bali
+                    </h2>
+                    <p class="text-base font-medium text-slate-400 lg:text-lg">
+                        APADA bali menawarkan konsultasi jasa tim arsitek
+                        dengan layanan lengkap dalam bidang Arsitektur,
+                        Furniture, PBG/SLF, Furniture. Kami siap membantu
+                        anda dari awal hingga akhir proyek. Kami memiliki
+                        antusiasme tinggi terhadap desain berkualitas,
+                        dengan pendekatan baru untuk setiap proyek,
+                        memperhatikan perincian desain, dan tetap
+                        memperhatikan konteks dan lingkungan setempat.
+                        Desain kami mencerminkan nuansa kontemporer namun
+                        juga sering terinspirasi oleh bentuk dan bahan
+                        tradisional vernakular di lokasi proyek kami.
+                    </p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="mb-4 text-2xl font-semibold text-slate-200 lg:pt-10 lg:text-3xl">
+                        Mari Berkonsultasi
+                    </h3>
+                    <p class="mb-6 text-base font-medium text-slate-400 lg:text-lg">
+                        Kami berpengalaman dalam berbagai sektor dan skala
+                        proyek, termasuk perumahan, ekstensi rumah,
+                        komunitas, dan komersial. Setiap proyek kami
+                        diperlakukan dengan perhatian dan kepedulian yang
+                        sama. <br />
+                        <br />
+                        Jika Anda mencari arsitek yang akan bekerja sama
+                        dengan Anda untuk mencapai tujuan proyek Anda,
+                        jangan ragu untuk
+                        <a href="http://https://wa.me/qr/O7TNYQMYGZD2I1" target="_blank"
+                            class="a-call text-teal-500">menghubungi kami</a>
+                        hari ini.
+                    </p>
+
+                    <!-- Social Media Icons -->
+                    <div class="flex items-center">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/apadastudiobali/" target="_blank"
+                            class="mr-3 flex h-9 w-9 justify-center rounded-full border border-slate-300 text-slate-300 hover:border-neutral-700 hover:text-amber-500">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/qr/O7TNYQMYGZD2I1" target="_blank"
+                            class="mr-3 flex h-9 w-9 justify-center rounded-full border border-slate-300 text-slate-300 hover:border-neutral-700 hover:text-green-400">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>WhatsApp</title>
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="https://youtube.com/@apadabalichannel/" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>YouTube</title>
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/profile.php?id=61550496303252" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white">
+                            <svg role="img" viewBox="0 0 24 24" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook</title>
+                                <path
+                                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                            </svg>
+                        </a>
+                        <!-- Mail -->
+                        <a href="mailto:apadabali@gmail.com" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Email APADA Bali</title>
+                                <path
+                                    d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="services" class="bg-slate-950 pb-12 pt-24">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 max-w-xl text-center">
+                    <h2
+                        class="mb-4 bg-gradient-to-r from-amber-400 via-red-700 to-indigo-600 bg-clip-text py-5 text-4xl font-bold text-transparent sm:text-4xl lg:text-5xl">
+                        Kami Siap Mewujudkan Properti Anda.
+                    </h2>
+                    <p class="text-md font-medium text-amber-300 md:text-lg">
+                        APADA Bali memiliki 3 divisi yang dibuat keperluan
+                        spesifik anda, dari Konsultasi desain arsitektur,
+                        pengurusan PBG dan SLF, serta menyediakan keperluan
+                        interior anda.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-start md:px-5">
+                <div class="mb-12 w-full px-4 md:w-1/2 lg:w-1/3 lg:pt-10">
+                    <div class="h-full border border-slate-600 rounded-md p-5 shadow-sm bg-stone-900">
+                        <a href="./pages/portofolio-asb.html">
+                            <img src="./assets/asb.svg" class="w-auto h-40 mb-4" alt="APADA Studio Bali Logo" />
+                        </a>
+                        <h1
+                            class="text-3xl lg:text-4xl font-bold text-transparent bg-gradient-to-r from-red-600 via-amber-300 to-indigo-700/80 bg-clip-text py-2">
+                            APADA Studio Bali
+                        </h1>
+                        <h3 class="mb-3 font-medium text-slate-200">Konsultan, dan Studio Arsitektur</h3>
+                        <p class="mb-6 font-medium leading-relaxed text-slate-200">
+                            Konsultasi desain bangunan impian Anda.
+                        </p>
+                        <div class="flex gap-4">
+                            <button id="openASBPort"
+                                class="rounded-md bg-stone-800 px-6 py-2 text-base font-semibold text-white transition hover:bg-slate-200 hover:text-teal-600 hover:shadow-lg">
+                                Visit
+                            </button>
+                            <a href="https://wa.me/qr/O7TNYQMYGZD2I1" target="_blank"
+                                class="rounded-md bg-stone-800 px-6 py-2 text-base font-semibold text-white transition hover:bg-slate-200 hover:text-teal-600 hover:shadow-lg">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 w-full px-4 md:w-1/2 lg:w-1/3 lg:pt-10">
+                    <div class="h-full border border-slate-600 rounded-md p-5 shadow-sm bg-stone-900">
+                        <a href="./pages/portofolio-ajb.html">
+                            <img src="./assets/ajb.svg" class="w-auto h-40 mb-4" alt="APADA Jasa Bali Logo" />
+                        </a>
+                        <h1
+                            class="text-3xl lg:text-4xl font-bold text-transparent bg-gradient-to-r from-indigo-400 via-red-600 to-indigo-700/80 bg-clip-text py-2">
+                            APADA Jasa Bali
+                        </h1>
+                        <h3 class="mb-3 font-medium text-slate-200">Pengurusan Jasa PBG/SLF</h3>
+                        <p class="mb-6 font-medium leading-relaxed text-slate-200">
+                            Jasa pengurusan PBG/SLF Properti Anda.
+                        </p>
+                        <div class="flex gap-4">
+                            <button id="openAJBPort"
+                                class="rounded-md bg-stone-800 px-6 py-2 text-base font-semibold text-white transition hover:bg-slate-200 hover:text-teal-600 hover:shadow-lg">
+                                Visit
+                            </button>
+                            <a href="https://wa.me/qr/O7TNYQMYGZD2I1" target="_blank"
+                                class="rounded-md bg-stone-800 px-6 py-2 text-base font-semibold text-white transition hover:bg-slate-200 hover:text-teal-600 hover:shadow-lg">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 w-full px-4 md:w-1/2 lg:w-1/3 lg:pt-10">
+                    <div class="h-full border border-slate-600 rounded-md p-5 shadow-sm bg-stone-900">
+                        <a href="#">
+                            <img src="./assets/afb.svg" class="w-auto h-40 mb-4" alt="APADA Furniture Bali Logo" />
+                        </a>
+                        <h1
+                            class="text-3xl lg:text-4xl font-bold text-transparent bg-gradient-to-r from-emerald-400 via-blue-600 to-indigo-700/80 bg-clip-text py-2">
+                            APADA Furniture Bali
+                        </h1>
+                        <h3 class="mb-3 font-medium text-slate-200">Untuk kebutuhan Furniture dan Interior anda.</h3>
+                        <p class="mb-6 font-medium leading-relaxed text-slate-200">
+                            Dibuat sesuai keperluan interior anda.
+                        </p>
+                        <div class="flex gap-4">
+                            <button id="openAFBPort"
+                                class="rounded-md bg-stone-800 px-6 py-2 text-base font-semibold text-white transition hover:bg-slate-200 hover:text-teal-600 hover:shadow-lg">
+                                Visit
+                            </button>
+                            <a href="https://wa.me/qr/O7TNYQMYGZD2I1" target="_blank"
+                                class="rounded-md bg-stone-800 px-6 py-2 text-base font-semibold text-white transition hover:bg-slate-200 hover:text-teal-600 hover:shadow-lg">
+                                Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full text-center mb-12 px-4">
+                    <p class="text-slate-300">
+                        Anda bisa <a href="https://wa.me/qr/O7TNYQMYGZD2I1" target="_blank"
+                            class="text-amber-600 hover:underline">menghubungi kami</a>
+                        jika memiliki pertanyaan tentang jasa kami. <br>
+                        Atau kunjungi <a href="./pages/workflow.html" class="text-amber-600 hover:underline">halaman
+                            ini</a> untuk mengetahui alur kerja kami.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="spaces" class="bg-neutral-950 bg-opacity-50 backdrop-blur-md pb-16 pt-16">
+        <div class="container">
+            <div class="flex flex-col md:flex-row">
+                <!-- Left side (text) -->
+                <div class="p-4 md:w-1/2">
+                    <h4 class="mb-2 font-bold uppercase text-amber-500">
+                        Ruang
+                    </h4>
+                    <h1
+                        class="mb-4 bg-gradient-to-r from-amber-400 via-red-700 to-indigo-600 bg-clip-text text-5xl font-bold text-transparent lg:text-6xl">
+                        APADA Bali
+                    </h1>
+                </div>
+
+                <!-- Right side (image) -->
+                <div class="relative p-4 md:w-1/2">
+                    <img src="./assets/content/c1.webp" class="w-full rounded-md" alt="Lobby" />
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <div class="bg-black bg-opacity-50 backdrop-blur-sm p-2 rounded-tr-md">
+                            <p class="text-white">Our New Lobby</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento Images -->
+            <div class="mt-8 flex flex-wrap">
+                <div class="mb-12 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\content\c2.webp" class="h-full w-auto object-cover rounded-md" />
+                    </div>
+                </div>
+
+                <div class="mb-12 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\content\c3.webp" class="h-full w-full object-cover rounded-md" />
+                    </div>
+                </div>
+
+                <div class="mb-12 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\content\c4.webp" class="h-full w-auto object-cover rounded-md" />
+                    </div>
+                </div>
+
+                <div class="mb-12 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\content\c5.webp" class="h-full w-auto object-cover rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-12 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\content\c6.webp" class="h-auto w-auto object-cover rounded-md" />
+                    </div>
+                </div>
+                <!-- Skip -->
+
+
+                <div class="flex flex-col md:flex-row border-t border-gray-700 lg:pt-10">
+
                     <!-- Left side (text) -->
                     <div class="p-4 md:w-1/2">
-                        <h4 class="mb-2 font-bold uppercase text-amber-500">
-                            Ruang
-                        </h4>
                         <h1
-                            class="mb-4 bg-gradient-to-r from-amber-400 via-red-700 to-indigo-600 bg-clip-text text-5xl font-bold text-transparent lg:text-6xl"
-                        >
-                            APADA Bali
+                            class="mb-4 bg-gradient-to-r from-indigo-400 via-blue-700 to-emerald-600 bg-clip-text text-5xl font-bold text-transparent lg:text-6xl">
+                            Dokumentasi
                         </h1>
+                        <p class="text-md font-medium text-amber-300 md:text-lg">
+                            Beberapa dokumentasi kegiatan dari APADA Bali. <br>
+                            Sponsor, Program Magang, dan lainnya. <br>
+                        </p>
                     </div>
 
                     <!-- Right side (image) -->
                     <div class="relative p-4 md:w-1/2">
-                        <img src="./assets/content/c1.webp" class="w-full rounded-md" alt="Lobby" />
+                        <img src="./assets/img/cert/cert_1.jpg" class="w-full rounded-md" alt="Certificate" />
                         <div class="absolute bottom-0 left-0 p-4">
-                            <div class="bg-black bg-opacity-50 backdrop-blur-sm p-2 rounded-tr-md">
-                                <p class="text-white">Our New Lobby</p>
+                            <div class="bg-black backdrop-blur-md bg-opacity-50 p-2">
+                                <p class="text-white">Sponsorship at Udayana University</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Bento Images -->
-                <div class="mt-8 flex flex-wrap">
-                    <div class="mb-12 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\content\c2.webp"
-                                class="h-full w-auto object-cover rounded-md"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mb-12 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\content\c3.webp"
-                                class="h-full w-full object-cover rounded-md"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mb-12 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\content\c4.webp"
-                                class="h-full w-auto object-cover rounded-md"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mb-12 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\content\c5.webp"
-                                class="h-full w-auto object-cover rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-12 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\content\c6.webp"
-                                class="h-auto w-auto object-cover rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <!-- Skip -->
-                    <div class="flex flex-col md:flex-row border-t border-white lg:pt-10">
-                        <!-- Left side (text) -->
-                        <div class="p-4 md:w-1/2">
-                            <h1
-                                class="mb-4 bg-gradient-to-r from-indigo-400 via-blue-700 to-emerald-600 bg-clip-text text-5xl font-bold text-transparent lg:text-6xl"
-                            >
-                                Dokumentasi
-                            </h1>
-                            <p
-                            class="text-md font-medium text-amber-300 md:text-lg"
-                        >
-                            Beberapa dokumentasi kegiatan dari APADA Bali. <br>
-                            Sponsor, Program Magang, dan lainnya. <br>
-                        </p>
-                        </div>
-    
-                        <!-- Right side (image) -->
-                        <div class="relative p-4 md:w-1/2">
-                            <img src="./assets/img/cert/cert_1.jpg" class="w-full rounded-md" alt="Certificate" />
-                            <div class="absolute bottom-0 left-0 p-4">
-                                <div class="bg-black backdrop-blur-md bg-opacity-50 p-2">
-                                    <p class="text-white">Sponsorship at Udayana University</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative p-4 md:w-1/2">
-                            <img
-                                src=".\assets\img\staff.png"
-                                class="h-full w-full object-cover rounded-md"
-                            />
-                            <div class="absolute bottom-0 left-0 p-4">
-                                <div class="bg-black backdrop-blur-md bg-opacity-50 p-2">
-                                    <p class="text-white">APADA Bali Staff</p>
-                                </div>
-                            </div>
-                    </div>
-                    
-                    <div class="relative w-full mx-auto flex rounded-sm items-center justify-center bg-gradient-to-br from-emerald-400 via-blue-900 to-green-600 my-4 px-8 shadow-md">
-                        <h1 class="mx-3 my-3 font-medium gradient-text text-center text-white md:text-2xl outline-black py-4">APADA Bali Internship</h1>
-                        <span class="mx-4 h-8 bg-slate-400" style="width: 2px"></span>
-                        <span class="text-white">Daftar program magang dan info lebih lanjut: <a class="text-amber-300 font-medium" href="./pages/karir.html">Career</a>.</span>
-                    </div>
-                    
-
-                    <div class="mb-5 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-01291.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-2 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-218214.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-2 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-2232124.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-2 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-2323121.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-2 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-2323819.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-2 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-2323902.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-2 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-2325009.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-2 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-2325010.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                    </div>
-                    <div class="mb-2 p-4 md:w-1/3">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img
-                                src=".\assets\img\intern\intern-2325012.png"
-                                class="h-full w-full object-fit rounded-md"
-                            />
-                        </div>
-                        <div class="relative w-full mx-auto flex rounded-sm items-center justify-center bg-gradient-to-br from-red-400 via-violet-800 to-amber-600 my-4 px-8 shadow-md">
-                            <h1 class="mx-3 my-3 font-medium gradient-text text-center text-white md:text-2xl outline-black py-4">APADA Bali Internship</h1>
-                            <span class="mx-4 h-8 bg-slate-400" style="width: 2px"></span>
-                            <span class="text-white">Daftar program magang dan info lebih lanjut: <a class="text-amber-300 font-medium" href="./pages/karir.html">Career</a>.</span>
+                <div class="relative p-4 md:w-1/2">
+                    <img src=".\assets\img\staff.png" class="h-full w-full object-cover rounded-md" />
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <div class="bg-black backdrop-blur-md bg-opacity-50 p-2">
+                            <p class="text-white">APADA Bali Staff</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- footer -->
-        <footer class="bg-black pb-12 pt-24">
-            <div class="container">
-                <div class="flex flex-wrap">
-                    <div class="mb-12 w-full px-4 font-medium text-slate-300">
-                        <h1
-                            class="mb-5 bg-gradient-to-r from-amber-400 from-10% via-red-500 via-15% to-indigo-600 to-40% bg-clip-text text-5xl font-bold text-transparent"
-                        >
-                            APADA Bali
-                        </h1>
-                        <h3 class="mb-2 text-2xl font-bold">
-                            Studio Arsitektur, Jasa PBG / SLF, & Home Furnishing
-                        </h3>
-                        <h4 class="mb-2 text-2xl font-bold text-emerald-300">
-                            Main Office:
-                        </h4>
+                <div
+                    class="relative w-full mx-auto flex rounded-sm items-center justify-center bg-gradient-to-br from-emerald-400 via-blue-900 to-green-600 my-4 px-8 shadow-md">
+                    <h1
+                        class="mx-3 my-3 font-medium gradient-text text-center text-white md:text-2xl outline-black py-4">
+                        APADA Bali Internship</h1>
+                    <span class="mx-4 h-8 bg-slate-400" style="width: 2px"></span>
+                    <span class="text-white ">Daftar program magang dan info lebih lanjut: <a
+                            class="text-amber-300 font-medium" href="./pages/karir.html">Career</a>.</span>
+                </div>
 
-                        <p>
-                            Jl. Waturenggong Gg. XVIIB No.9, Panjer, Denpasar
-                            Selatan
-                        </p>
-                        <p>Kota Denpasar, Bali</p>
-                        <br />
 
-                        <p class="font-medium">apadabali[@]gmail.com</p>
-                        <p class="font-medium">apadastudiobali13[@]gmail.com</p>
+                <div class="mb-5 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-01291.png" class="h-full w-full object-fit rounded-md" />
                     </div>
-                    <div class="mb-12 w-full px-4 md:w-1/2 lg:w-1/3">
-                        <h3 class="mb-5 text-xl font-medium text-amber-200">
-                            Kategori
-                        </h3>
-                        <ul class="text-slate-300 hover:underline">
-                            <li>
-                                <a
-                                    href="#"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >Home</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#asb"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >APADA Studio Bali</a
-                                >
-                            </li>
-
-                            <li>
-                                <a
-                                    href="#ajb"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >APADA Jasa Bali</a
-                                >
-                            </li>
-
-                            <li>
-                                <a
-                                    href="#afb"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >APADA Furniture Bali</a
-                                >
-                            </li>
-                        </ul>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-218214.png" class="h-full w-full object-fit rounded-md" />
                     </div>
-                    <div class="mb-12 w-full px-4 md:w-1/2 lg:w-1/3">
-                        <h3 class="mb-5 text-xl font-medium text-amber-300">
-                            Tautan
-                        </h3>
-                        <ul class="text-slate-300">
-                            <li>
-                                <a
-                                    href="#navigation"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >Beranda</a
-                                >
-                            </li>
-
-                            <li>
-                                <a
-                                    href="#profile"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >Tentang APADA</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#portofolio"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >Portofolio</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://goo.gl/maps/RyyL2UzrsiR1xfSX7"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >Lokasi</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="./pages/services.html"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >Layanan kami</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="./pages/karir.html"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >Karir</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="./pages/workflow.html"
-                                    class="hover:text-orange mb-3 inline-block text-base"
-                                    >Panduan Alur Kerja</a
-                                >
-                            </li>
-                        </ul>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-2232124.png" class="h-full w-full object-fit rounded-md" />
                     </div>
-
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-2323121.png" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-2323819.png" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-2323902.png" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-2325009.png" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-2325010.png" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\intern-2325012.png" class="h-full w-full object-fit rounded-md" />
+                    </div>
                     <div
-                        class="mb-12 w-full items-center justify-center px-4 md:w-1/2 lg:w-1/3"
-                    >
-                        <h3 class="mb-5 text-xl font-medium text-amber-300">
-                            Our Office Location
-                        </h3>
-                        <div class="wrap aspect-ratio-16/9 flex-wrap">
-                            <iframe class="rounded-md"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.0766961293118!2d115.22224423835837!3d-8.676959146329883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd241819b4c4ec5%3A0xaa9b547d93e248ab!2sAPADA%20Bali!5e0!3m2!1sen!2sid!4v1711016644838!5m2!1sen!2sid"
-                                width="365"
-                                height="300"
-                                style="border: 0"
-                                allowfullscreen="true"
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </div>
+                        class="relative w-full mx-auto flex rounded-sm items-center justify-center bg-gradient-to-br from-red-400 via-violet-800 to-amber-600 my-4 px-8 shadow-md">
+                        <h1
+                            class="mx-3 my-3 font-medium gradient-text text-center text-white md:text-2xl outline-black py-4">
+                            APADA Bali Internship</h1>
+                        <span class="mx-4 h-8 bg-slate-400" style="width: 2px"></span>
+                        <span class="text-white">Daftar program magang dan info lebih lanjut: <a
+                                class="text-amber-300 font-medium" href="./pages/karir.html">Career</a>.</span>
                     </div>
                 </div>
-                <div class="w-full border-t border-amber-500 pt-10">
-                    <div class="mb-5 flex items-center justify-center">
-                        <!-- Youtube -->
-                        <a
-                            href="https://youtube.com/@apadabalichannel/"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white"
-                        >
-                            <svg
-                                role="img"
-                                width="20"
-                                class="fill-current"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>YouTube</title>
-                                <path
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                                />
-                            </svg>
-                        </a>
-
-                        <!-- Instagram -->
-                        <a
-                            href="https://www.instagram.com/apadastudiobali/"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white"
-                        >
-                            <svg
-                                role="img"
-                                width="20"
-                                class="fill-current"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>Instagram</title>
-                                <path
-                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                                />
-                            </svg>
-                        </a>
-
-                        <!-- Facebook -->
-                        <a
-                            href="https://www.facebook.com/profile.php?id=61550496303252"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white"
-                        >
-                            <svg
-                                role="img"
-                                viewBox="0 0 24 24"
-                                class="fill-current"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>Facebook</title>
-                                <path
-                                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
-                                />
-                            </svg>
-                        </a>
-
-                        <!-- Email -->
-                        <a
-                            href="mailto:apadabali@gmail.com"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white"
-                        >
-                            <svg
-                                role="img"
-                                width="20"
-                                class="fill-current"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>Mail</title>
-                                <path
-                                    d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12"
-                                />
-                            </svg>
-                        </a>
-
-                        <p class="text-md text-center text-emerald-600">
-                            © 2025 APADA Bali
-                        </p>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\apada-8.webp" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                    <div
+                        class="relative w-full mx-auto flex rounded-sm items-center justify-center bg-gradient-to-br from-violet-800 via-teal-800 to-black my-4 px-8 shadow-md">
+                        <h1
+                            class="mx-3 my-3 font-medium gradient-text text-center text-white md:text-2xl outline-black py-4">
+                            APADA Bali Internship</h1>
+                        <span class="mx-4 h-8 bg-slate-400" style="width: 2px"></span>
+                        <span class="text-white">Daftar program magang dan info lebih lanjut: <a
+                                class="text-amber-300 font-medium" href="./pages/karir.html">Career</a>.</span>
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\apada-5.webp" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\apada-6.webp" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\apada-7.webp" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\apada-2.webp" class="h-full w-full object-fit rounded-md" />
+                    </div>
+                </div>
+                <div class="mb-2 p-4 md:w-1/3">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src=".\assets\img\intern\apada-9.webp" class="h-full w-full object-fit rounded-md" />
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <script src="./assets/js/script.js"></script>
-        <script src="./assets/js/background.js"></script>
-        <script src="./assets/js/error.js"></script>
-        <script src="./assets/js/navigation.js"></script>
-    </body>
+    <!-- footer -->
+    <footer class="bg-black pb-12 pt-24">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="mb-12 w-full px-4 font-medium text-slate-300">
+                    <h1
+                        class="mb-5 bg-gradient-to-r from-amber-400 from-10% via-red-500 via-15% to-indigo-600 to-40% bg-clip-text text-5xl font-bold text-transparent">
+                        APADA Bali
+                    </h1>
+                    <h3 class="mb-2 text-2xl font-bold">
+                        Studio Arsitektur, Jasa PBG / SLF, & Home Furnishing
+                    </h3>
+                    <h4 class="mb-2 text-2xl font-bold text-emerald-300">
+                        Main Office:
+                    </h4>
+
+                    <p>
+                        Jl. Waturenggong Gg. XVIIB No.9, Panjer, Denpasar
+                        Selatan
+                    </p>
+                    <p>Kota Denpasar, Bali</p>
+                    <br />
+
+                    <p class="font-medium">apadabali[@]gmail.com</p>
+                </div>
+                <div class="mb-12 w-full px-4 md:w-1/2 lg:w-1/3">
+                    <h3 class="mb-5 text-xl font-medium text-amber-200">
+                        Kategori
+                    </h3>
+                    <ul class="text-slate-300 hover:underline">
+                        <li>
+                            <a href="#" class="hover:text-orange mb-3 inline-block text-base">Home</a>
+                        </li>
+                        <li>
+                            <a href="#asb" class="hover:text-orange mb-3 inline-block text-base">APADA Studio Bali</a>
+                        </li>
+
+                        <li>
+                            <a href="#ajb" class="hover:text-orange mb-3 inline-block text-base">APADA Jasa Bali</a>
+                        </li>
+
+                        <li>
+                            <a href="#afb" class="hover:text-orange mb-3 inline-block text-base">APADA Furniture
+                                Bali</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-12 w-full px-4 md:w-1/2 lg:w-1/3">
+                    <h3 class="mb-5 text-xl font-medium text-amber-300">
+                        Tautan
+                    </h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#navigation" class="hover:text-orange mb-3 inline-block text-base">Beranda</a>
+                        </li>
+
+                        <li>
+                            <a href="#profile" class="hover:text-orange mb-3 inline-block text-base">Tentang APADA</a>
+                        </li>
+                        <li>
+                            <a href="#portofolio" class="hover:text-orange mb-3 inline-block text-base">Portofolio</a>
+                        </li>
+                        <li>
+                            <a href="https://goo.gl/maps/RyyL2UzrsiR1xfSX7"
+                                class="hover:text-orange mb-3 inline-block text-base">Lokasi</a>
+                        </li>
+                        <li>
+                            <a href="./pages/services.html"
+                                class="hover:text-orange mb-3 inline-block text-base">Layanan kami</a>
+                        </li>
+                        <li>
+                            <a href="./pages/karir.html" class="hover:text-orange mb-3 inline-block text-base">Karir</a>
+                        </li>
+                        <li>
+                            <a href="./pages/workflow.html"
+                                class="hover:text-orange mb-3 inline-block text-base">Panduan Alur Kerja</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-12 w-full items-center justify-center px-4 md:w-1/2 lg:w-1/3">
+                    <h3 class="mb-5 text-xl font-medium text-amber-300">
+                        Our Office Location
+                    </h3>
+                    <div class="wrap aspect-ratio-16/9 flex-wrap">
+                        <iframe class="rounded-md"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.0766961293118!2d115.22224423835837!3d-8.676959146329883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd241819b4c4ec5%3A0xaa9b547d93e248ab!2sAPADA%20Bali!5e0!3m2!1sen!2sid!4v1711016644838!5m2!1sen!2sid"
+                            width="365" height="300" style="border: 0" allowfullscreen="true" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full border-t border-amber-500 pt-10">
+                <div class="mb-5 flex items-center justify-center">
+                    <!-- Youtube -->
+                    <a href="https://youtube.com/@apadabalichannel/" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>YouTube</title>
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/apadastudiobali/" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path
+                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                        </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/profile.php?id=61550496303252" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white">
+                        <svg role="img" viewBox="0 0 24 24" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                            <title>Facebook</title>
+                            <path
+                                d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                        </svg>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:apadabali@gmail.com" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 from-red-600 to-indigo-800 text-slate-300 hover:border-black hover:bg-gradient-to-b hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Mail</title>
+                            <path
+                                d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12" />
+                        </svg>
+                    </a>
+
+                    <p class="text-md text-center text-emerald-600">
+                        © 2025 APADA Bali
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/background.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+</body>
+
 </html>
